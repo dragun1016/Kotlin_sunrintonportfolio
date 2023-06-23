@@ -50,9 +50,10 @@
     </ImageView>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="344dp">
+        android:layout_marginTop="344dp"
+        android:background="#1E1E1E">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -63,32 +64,126 @@
                 android:fontFamily="@font/suitregular"
                 android:text="추천 오디오 >"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:layout_marginStart="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="22dp">
             </TextView>
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/happylemonbk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/happylemon"
                 android:layout_marginTop="62dp"
-                android:layout_marginStart="-100dp">
-            </ImageView>
-
+                android:layout_marginStart="-100dp"
+                android:background="#2E2E2E">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/harryporter"
+                android:layout_marginTop="62dp"
+                android:layout_marginStart="26dp"
+                android:background="#2E2E2E">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blue"
+                android:layout_marginTop="62dp"
+                android:layout_marginStart="26dp"
+                android:background="#2E2E2E">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twome"
+                android:background="#2E2E2E"
+                android:layout_marginTop="233dp"
+                android:layout_marginStart="-352.7dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trip"
+                android:background="#2E2E2E"
+                android:layout_marginTop="233dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smallbird"
+                android:background="#2E2E2E"
+                android:layout_marginTop="233dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:text="화제의 오디오 >"
-                android:textSize="18dp"
-                android:textColor="@color/white"
                 android:fontFamily="@font/suitregular"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="723dp">
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="401dp"
+                android:layout_marginStart="-353dp">
             </TextView>
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/namishop"
+            android:background="#2E2E2E"
+            android:layout_marginTop="440dp"
+            android:layout_marginStart="-115dp">
+        </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rainshop"
+                android:background="#2E2E2E"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marrygold"
+                android:background="#2E2E2E"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chaeho"
+                android:background="#2E2E2E"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="-352dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/worldend"
+                android:background="#2E2E2E"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flow"
+                android:background="#2E2E2E"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="26dp">
+            </ImageButton>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="785dp"
+                android:layout_marginStart="-220dp">
+            </Button>
         </LinearLayout>
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -96,13 +191,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#121212"
-        app:itemIconTint="#ffffff"
-        app:itemTextColor="#99ffffff"
         app:labelVisibilityMode="labeled"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu" />
+        app:itemIconTint="@drawable/menu_click_color"
+        app:itemTextColor="@drawable/menu_click_color"
+        app:menu="@menu/menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,7 @@
 
     <item android:id="@+id/menu_home"
         android:icon="@drawable/home"
+        android:checked="true"
         android:title="홈"/>
 
     <item android:id="@+id/menu_inbox"
